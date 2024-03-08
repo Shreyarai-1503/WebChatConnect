@@ -14,7 +14,7 @@ const MessageContainer = () => {
     return () => setSelectedConversation(null);
   }, [setSelectedConversation]);
   return (
-    <div className="sm:min-w-[550px] flex flex-col">
+    <div className="md:min-w-[450px] flex flex-col">
       {!selectedConversation ? (
         <NoChatSelected name = {authUser.fullname} />
       ) : (
